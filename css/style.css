@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+header, footer, nav {
+    height: 13%;
+    background-color: darkcyan;
+}
+
+main {
+    height: 70%;
+    margin: 0 auto;
+}
+
+header > h1, footer > p {
+    text-align: center;
+}
+
+header {
+    letter-spacing: 1rem;
+    padding-top: 1rem;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    color: snow;
+}
+
+nav {
+    font-size: x-large;
+    padding-left: 6%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ol { 
+    margin: 0 30%;
+    padding: 1rem;
+}
+
+ol li {
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+table {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+table tr td h2 {
+    text-align: center;
+}
+
+table tr td {
+    border: 0.05rem double black;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: rgb(167, 207, 223);
+}
+
+table tr td span {
+    margin-left: 30%;
+    display: inline-block;
+}
+
+table tr td a {
+    font-size: x-large;
+    letter-spacing: 1rem;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 100%;
+margin-left: -60px;
+
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+} 
+
+.firstmaintranslatedtext {display: none;}
+.first:hover firstmaintext {display: none;}
+.first:hover firstmaintranslatedtext {display: inline;}
